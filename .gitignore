@@ -10,15 +10,34 @@
 /coverage
 
 # next.js
+
 /.next/
 /out/
 
 # production
 /build
+out
+.next
+
+# pwa
+public/sw.js
+public/workbox-*.js
+
 
 # misc
 .DS_Store
 *.pem
+.eslintcache
+/.env
+/.env.local
+/.env.development
+/.env.development.local
+/.env.staging
+/.env.staging.local
+/.env.production
+/.env.production.local
+/.env.test
+/.env.test.local
 
 # debug
 npm-debug.log*
@@ -34,3 +53,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# IDE
+.idea
+.vscode
+.fleet

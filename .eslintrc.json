@@ -1,3 +1,18 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@tanstack/eslint-plugin-query/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }]
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "globals": {
+    "React": true
+  }
 }
