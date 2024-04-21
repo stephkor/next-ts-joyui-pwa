@@ -1,14 +1,20 @@
 import axios from "axios";
 
 import { ACCESS_TOKEN_STORAGE_KEY } from "@/constants";
+import getConfig from "next/config";
+
+const { publicRuntimeConfig } = getConfig();
 
 const ERROR_MESSAGES: { [x: string | number]: string } = {
   UNKNOWN: "예기치 않은 에러가 발생했습니다. 다시 시도해주세요.",
 };
 
-const axiosInstance = axios.create({});
+const axiosInstance = axios.create({
+  baseURL: publicRuntimeConfig.API_BASE_URL,
+});
 
-axiosInstance.interceptors.request.use(function (config) {
+
+axiosInstance.interceptors.request.use(function(config) {
   const token = localStorage.getItem("accessToken");
 
   if (token) {

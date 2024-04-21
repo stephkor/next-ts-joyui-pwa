@@ -5,7 +5,7 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 import { useNProgress } from "@/hooks/use-nprogress";
 
-import { CssBaseline, CssVarsProvider, Sheet } from "@mui/joy";
+import { CssBaseline, CssVarsProvider } from "@mui/joy";
 
 import dayjs from "dayjs";
 import "dayjs/locale/ko";

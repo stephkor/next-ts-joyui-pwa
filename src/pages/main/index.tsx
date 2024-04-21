@@ -4,11 +4,7 @@ import getConfig from "next/config";
 import MainLayout from "@/layouts/main";
 import { Box } from "@mui/joy";
 
-const Page:NextPage = () => {
-
-  const {publicRuntimeConfig} = getConfig();
-
-  console.log(publicRuntimeConfig);
+const Page: NextPage = () => {
 
 
   return (
@@ -19,7 +15,7 @@ const Page:NextPage = () => {
         </Box>
       </Box>
     </MainLayout>
-  )
-}
+  );
+};
 
 export default Page;
