@@ -11,7 +11,7 @@ import dayjs from "dayjs";
 import "dayjs/locale/ko";
 import realtiveTime from "dayjs/plugin/relativeTime";
 
-import "@/styles/normalize.css";
+
 
 dayjs.extend(realtiveTime);
 
